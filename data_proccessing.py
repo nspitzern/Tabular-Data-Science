@@ -2,7 +2,11 @@
 from scipy.stats import ks_2samp
 from scipy.special import kl_div
 from math import e
+import numpy as np
+import pandas as pd
+from plot import plot_numerical_histograms
 
+rnd = np.random
 
 def get_entropy(df, base=None):
     ent = []

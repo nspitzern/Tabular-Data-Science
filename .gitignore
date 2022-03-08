@@ -130,3 +130,9 @@ dmypy.json
 
 *.csv
 *.zip
+
+# Kaggle
+kaggle.json
+
+# Output
+*.jpg

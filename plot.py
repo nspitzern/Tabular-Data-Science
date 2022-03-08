@@ -1,7 +1,9 @@
+import scipy
 from scipy import stats
 import statsmodels.api as sm
 import seaborn as sns
 import matplotlib.pyplot as plt
+import pandas as pd
 
 
 def plot_histograms_side_by_side(df1, df2):
