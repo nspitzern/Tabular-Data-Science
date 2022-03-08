@@ -135,4 +135,5 @@ dmypy.json
 kaggle.json
 
 # Output
+datasets
 *.jpg
