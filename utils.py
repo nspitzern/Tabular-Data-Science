@@ -1,10 +1,11 @@
-import imp
 import numpy as np
 import pandas as pd
 from sklearn.linear_model import LinearRegression, LogisticRegression
 from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_percentage_error,\
                             mean_absolute_error, accuracy_score
 from histogram_matching import *
+
+correction_func = lambda x, y: ((x - x.min()) * ((y.max() - y.min()) / (x.max() - x.min()))) + y.min()
 
 def match_to_normal_distribution(src_dist, mapping=None):
 
